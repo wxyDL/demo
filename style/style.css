@@ -1,0 +1,1182 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration:none;
+    color:#ffffff;
+}
+ul li{
+    list-style: none;
+}
+#wrap{
+    width: 100%;
+}
+/*头部*/
+#wrap #header{
+    width: 100%;
+    height: 48px;
+    background-color:#333;
+    margin-bottom: 20px;
+}
+#header .h_top{
+    width: 1080px;
+    height:48px;
+    background-color:#333;
+    margin: 0 auto;
+}
+.h_top .fr{
+    float: right;
+    width: 295px;
+    height: 48px;
+}
+.fr div,.fr span{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 48px;
+}
+.fr .dl{
+    margin-right: 10px;
+}
+.fr .dl a{
+    color: #e7e7e7;
+}
+.fr .bz{
+    margin:0 10px 0 10px;
+}
+.fr .bz a{
+    color: #e7e7e7;
+}
+.fr .APP{
+    position: relative;
+    margin-left: 10px;
+}
+.fr .APP a{
+    color: #e7e7e7;
+}
+.fr .line{
+    color: #666;
+}
+.fr .bz a:hover,.fr .APP a:hover{
+    color: #fff;
+}
+.fr .APP .ico{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -10px;
+    top: 9px;
+    background:url("../images/jingling.png")no-repeat 0 -1014px ;
+}
+.fr .APP span:nth-child(2){
+    margin-left: 20px;
+}
+/*头部*/
+#wrap #content{
+    width: 100%;
+}
+#content .c_log{
+    width: 1080px;
+    height: 51px;
+    margin: 0 auto;
+}
+.c_log .log{
+    float: left;
+    width: 123px;
+    height: 51px;
+    background:url("../images/log.png")no-repeat center;
+    background-size: 100%;
+}
+.c_log .list{
+    float: left;
+    width: 420px;
+    height: 51px;
+    margin-left:120px;
+}
+.c_log .list li{
+    float: left;
+    margin-right: 32px;
+    line-height: 51px;
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+    -webkit-transition:color .2s ease
+}
+.c_log .list li:hover{
+    color:#845f3f;
+}
+#content .c_log .search{
+    position: relative;
+    float: left;
+    width: 296px;
+    height: 42px;
+    border-bottom: 1px solid #e7e7e7;
+    margin-left: 40px;
+}
+.c_log .search a{
+    display: inline-block;
+    width: 30px;
+    height:30px;
+    margin-top:10px;
+    background: url("../images/jingling.png")no-repeat 0 -1458px;
+}
+.c_log .search input{
+    position: absolute;
+    width:200px;
+    top:17px;
+    border: none;
+    outline: 0;
+    color: #333;
+    left:40px;
+    font-size: 14px;
+}
+.c_log .cart{
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin:18px;
+    background:url("../images/jingling.png")no-repeat 0 -948px;
+}
+.c_log .cart:hover{
+    background:url("../images/jingling.png")no-repeat 0 -1186px;
+}
+#content .bnner-nav{
+    position: relative;
+    width: 1080px;
+    height: 358px;
+    border: 1px solid #eee;
+    margin: 5px  auto;
+}
+#content .bnner-nav .nav{
+    position: relative;
+    width: 221px;
+    height: 358px;
+    background-color:#845f3f;
+}
+.bnner-nav .nav .n-list{
+    position: relative;
+    width: 100%;
+    height:333px;
+    top:12.5px;
+}
+.bnner-nav .nav .n-list li{
+    user-select: none;
+    padding: 0 30px;
+    height:37px;
+    line-height: 37px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    transition: all .2s ease;
+}
+.bnner-nav .nav .n-list li:hover{
+    color: #f1ede9;
+    background-color:#684b34;
+}
+.bnner-nav .nav .n-list li a:hover{
+    color: #e4af82;
+}
+.bnner-nav .nav .tong{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 221px;
+    width:857px;
+    height: 357px;
+    overflow-y: auto;
+    z-index: 2;
+    background-color:#fff;
+}
+.bnner-nav .nav .on{
+    display: block;
+}
+/*有品推荐*/
+.clearfix{
+    overflow: hidden;
+}
+.bnner-nav .nav .tong p{
+    margin: 20px 0 0 30px;
+}.bnner-nav .nav .tong .yp-list{
+     width: 827px;
+     margin-left:30px;
+ }
+.nav .tong .yp-list li{
+    float: left;
+    width: 195px;
+    margin-bottom: 30px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.nav .tong .yp-list li img{
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+.nav .tong .yp-list li span{
+    vertical-align: middle;
+}
+/*轮播图*/
+.bnner-nav .bnner-box{
+    position: absolute;
+    top: 0;
+    left: 221px;
+    width: 857px;
+    height: 357px;
+    overflow: hidden;
+}
+.bnner-box .bnner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4285px;
+    height: 100%;
+    transition: left 1s;
+}
+.bnner-box .bnner li img{
+    width: 857px;
+    height: 357px;
+}
+/*.bnner-nav .bnner li{*/
+    /*display: none;*/
+    /*float: left;*/
+    /*cursor: pointer;*/
+/*}*/
+.bnner-nav .bnner li{
+    display: block;
+    float: left;
+    cursor: pointer;
+}
+/*.bnner-nav .bnner li.show{*/
+    /*display: block;*/
+/*}*/
+.bnner-nav .bnner-box  p{
+    position: absolute;
+    top:50%;
+    margin-top: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: url("../images/jingling.png")no-repeat 0 -1924px;
+}
+.bnner-nav .bnner-box .last{
+    right:0;
+    background: url("../images/jingling.png")no-repeat 0 -1840px;
+}
+.bnner-nav .bnner-box .last:hover{
+    background: url("../images/jingling.png")no-repeat 0 -1882px;
+}
+.bnner-nav .bnner-box .Next:hover{
+    background: url("../images/jingling.png")no-repeat 0 -1798px;
+}
+.bnner-nav .bnner-box .btn{
+    position: absolute;
+    bottom: 0px;
+    width: 150px;
+    height: 20px;
+    left: 0;
+    line-height: 20px;
+    margin-left:375px;
+}
+.bnner-nav .bnner-box .btn li{
+    float: left;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    border-radius: 50%;
+    background-color:#fff;
+    margin-right: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.bnner-nav .bnner-box .btn li:hover{
+    background-color:#845f3f;
+    border:5px solid #eee;
+    border-radius: 50%;
+    margin-right:10px;
+    margin-top:-5px;
+}
+.bnner-nav .bnner-box .btn li.on{
+    background-color:#845f3f;
+    border:5px solid #eee;
+    border-radius: 50%;
+    margin-right:10px;
+    margin-top:-5px;
+}
+#content .container{
+    width: 1080px;
+    height: 189px;
+    margin: 30px auto 0;
+    border-bottom:1px solid rgb(231,231,231);
+}
+#content .container .p-hreo-nav li{
+    width: 130px;
+    height: 147px;
+    float: left;
+    cursor: pointer;
+    margin:40px 86px 0 0;
+    text-align: center;
+}
+.container .p-hreo-nav li img{
+    width: 80px;
+    height: 80px;
+    margin-bottom:20px;
+}
+.container .p-hreo-nav li p{
+    color:rgb(102,102,102);
+}
+/*有品推荐*/
+#content .tuijian{
+    width:1080px;
+    height: 286px;
+    margin:50px auto;
+}
+#content .tuijian h2{
+    color: #333;
+    font-size: 28px;
+    font-weight:normal;
+}
+#content .tuijian h2 span{
+    color: #999;
+    font-size: 14px;
+}
+#content .tuijian .left{
+    float: left;
+    position: relative;
+    width: 537px;
+    height: 230px;
+    background-color:rgb(230, 239, 236);
+    margin-top: 20px;
+}
+.tuijian .left .href{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#content .tuijian .left img{
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    width: 275px;
+    height:183px;
+    z-index: 4;
+}
+.tuijian .left .text{
+    position: absolute;
+    margin: 23px 0 0 23px;
+    cursor: pointer;
+    width: 514px;
+    height: 110px;
+}
+.tuijian .left .text p:nth-child(1){
+    color:rgb(51, 51, 51);
+    font-size: 20px;
+    height: 24px;
+    line-height: 24px;
+}
+.tuijian .left .text p:nth-child(2){
+    color:rgb(153, 153, 153);
+    font-size:16px;
+    height: 20px;
+    line-height: 20px;
+    margin:10px 0 10px 0;
+}
+.tuijian .left .text p:nth-child(3){
+    height: 25px;
+    width: 62px;
+    background-color:rgb(155, 205, 188);
+    text-align: center;
+    line-height: 25px;
+    border-radius:3px;
+}
+.tuijian .left .text p span{
+    color: #fff;
+    font-size: 14px;
+}
+.tuijian .zhong{
+    position: relative;
+    float: left;
+    width: 266px;
+    height: 230px;
+    background-color:rgb(241, 233, 235);
+    margin:20px 5px 0 5px;
+}
+.tuijian .zhong .href{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.tuijian .zhong img{
+    position: absolute;
+    right: 45px;
+    bottom: 10px;
+    width: 175px;
+    z-index:4;
+    height: 117px;
+}
+.tuijian .zhong .text{
+    position: absolute;
+    width: 251px;
+    height: 75px;
+    margin:20px 0 0 15px;
+    cursor: pointer;
+}
+.tuijian .zhong .text p:nth-child(1){
+    color:rgb(51, 51, 51);
+    font-size: 20px;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom:10px;
+}
+.tuijian .zhong .text p:nth-child(2){
+    color:rgb(153, 153, 153);
+    font-size:16px;
+    height: 20px;
+    line-height: 20px;
+}
+.tuijian .right{
+    margin-left:0px;
+    margin-right:0px;
+}
+/*小米众筹*/
+#content .zhongchou{
+    width:1080px;
+    height: 316px;
+    margin:50px auto;
+}
+#content .zhongchou h2{
+    color: #333;
+    font-size: 28px;
+    font-weight:normal;
+}
+#content .zhongchou h2 span{
+    color: #999;
+    font-size: 14px;
+}
+#content .zhongchou .left{
+    float: left;
+    position: relative;
+    width: 537px;
+    height: 210px;
+    background-color:rgb(249, 243, 233);
+    margin-top: 20px;
+}
+.zhongchou .left .href{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.zhongchou .left img{
+    position: absolute;
+    width: 215px;
+    height: 215px;
+    right: 15px;
+    bottom: 10px;
+    z-index: 4;
+}
+.zhongchou .left .text{
+     position: absolute;
+     width: 517px;
+     height: 121px;
+     margin:30px 0 0 20px;
+    cursor: pointer;
+ }
+.zhongchou .left::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    background:url("../images/bar.64e546f1.jpg")no-repeat;
+}
+.zhongchou .left .text p:nth-child(1){
+    color: #333;
+    font-size: 20px;
+    height: 24px;
+    line-height: 24px;
+}
+.zhongchou .left .text p:nth-child(2){
+    color: #999;
+    font-size:16px;
+    width: 280px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;z
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 10px 0 20px 0;
+}
+ .left .text p:nth-child(3) span{
+    font-size:14px;
+     color:#a92112;
+     height: 28px;
+     line-height: 28px;
+}
+ .zhongchou .info{
+     /*position: relative;*/
+     width: 100%;
+     height: 50px;
+     margin-top:210px;
+     cursor: pointer;
+ }
+.zhongchou .info p{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+}
+.zhongchou .info p:nth-child(1){
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    margin-left: 16px;
+    color:#999;
+    /*font-weight:600;*/
+    font-size: 21px;
+    cursor: pointer;
+}
+.zhongchou .info p:nth-child(2){
+    margin-left:290px;
+    color: #a92112;
+    font-size:21px;
+}
+.info p:nth-child(1) span:nth-child(1){
+    color:red;
+}
+.info p:nth-child(1) span:nth-child(2){
+    display: inline-block;
+    text-align: center;
+    height: 22px;
+    padding:2px 6px;
+    background-color:rgb(255, 128, 48);
+    font-size:16px;
+    line-height: 22px;
+    /*vertical-align: 2px;*/
+    color: #fff;
+}
+.zhongchou .zhong{
+    position: relative;
+    float: left;
+    width:266px;
+    height: 210px;
+    background-color:rgb(248, 248, 248);
+    margin: 20px 0px 10px 5px;
+}
+.zhongchou .zhong::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    background: url(../images/bar.64e546f1.jpg)no-repeat;
+}
+.zhongchou .zhong a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.zhongchou .zhong img{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    right: 15px;
+    bottom: 10px;
+    cursor: pointer;
+}
+.zhongchou .zhong .pro-text{
+    position: absolute;
+    width: 255px;
+    padding:20px 0 0 10px;
+    cursor: pointer;
+}
+.zhong .pro-text .pro-price{
+    font-size: 20px;
+    color: #333;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.zhong .pro-text .pro-info{
+    color:#a92112;
+    line-height: 24px;
+    font-size: 20px;
+}
+.zhong .pro-text .pro-info span:nth-child(1){
+    font-size: 15px;
+    bottom: 2px;
+}
+.zhong .pro-text .pro-info span:nth-child(3){
+    font-size: 12px;
+}
+.zhongchou .zhong .bottom{
+    width: 100%;
+    height: 40px;
+    margin-top:210px;
+    cursor: pointer;
+}
+.zhongchou .zhong .bottom p{
+    display: inline-block;
+    line-height: 50px;
+    height: 50px;
+}
+.zhongchou .zhong .bottom .lf{
+    font-size: 21px;
+}
+.zhongchou .zhong .bottom .lf span:nth-child(1){
+     color: #a92112;
+ }
+.zhongchou .zhong .bottom .lf span:nth-child(2){
+    color:#999;
+}
+.zhongchou .zhong .bottom .lf span:nth-child(3){
+    padding: 2px 6px;
+    background-color:rgb(255, 156, 0);
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+}
+.zhongchou .zhong .bottom .ri{
+    margin-left:35px;
+    font-size: 21px;
+    color:#a92112;
+}
+.zhongchou .zhong .bottom .ri span:nth-child(2){
+    font-size: 16px;
+}
+/*热门*/
+#content .c-box{
+    width: 100%;
+    /*height: 500px;*/
+    /*margin: 50px auto;*/
+    padding: 10px 10px;
+    background-color:#f5f5f5;
+}
+#content .c-box .container{
+    position: relative;
+    width: 1080px;
+    height:465px;
+}
+.container h2{
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 400;
+    color: #333;
+}
+.container h2 span{
+    font-size: 14px;
+    color: #999;
+}
+.container .h-more{
+    position: absolute;
+    display: inline-block;
+    width:62px;
+    height:30px;
+    right: 0;
+    color: #999;
+}
+.container .h-more span{
+    float: left;
+    font-size: 14px;
+    margin-top:5px;
+    vertical-align: middle;
+}
+.container .h-more:after{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    content: "";
+    background: url("../images/jingling.png")no-repeat 0 -1118px;
+}
+.container .h-more:hover span{
+    color: #845f3f;
+}
+.container .h-more:hover::after{
+    background: url("../images/jingling.png")no-repeat 0 -1084px;
+}
+.container .b-nav{
+    position: relative;
+    width: 100%;
+    height: 419px;
+    margin-top:10px;
+    overflow: hidden;
+}
+.container .b-nav .bnner{
+    position: relative;
+    top: 0;
+    left: 0;
+    width:1621px;
+    height: 100%;
+    transition: left .5s;
+}
+.container .b-nav .bnner li{
+    position: relative;
+    float: left;
+    width: 266px;
+    height: 100%;
+    margin-right:5px;
+    transition: all .4s;
+    cursor: pointer;
+    background-color:#fff;
+}
+.container .b-nav .bnner li:hover{
+    box-shadow: 0 2px 20px rgba(0,0,0,.1);
+    transform:translate3d(0,-2px,0);
+}
+.container .b-nav .bnner li img{
+    width: 266px;
+    height: 266px;
+}
+.container .b-nav .bnner .hou{
+    margin-right: 0;
+}
+.container .b-nav .button p{
+    position: absolute;
+    top:50%;
+    margin-top:-19px;
+    width: 38px;
+    height: 38px;
+    background-color: red;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.container .b-nav .button p:nth-child(1){
+    left: 0;
+    background: url("../images/jingling.png")no-repeat 0 -1924px;
+}
+.container .b-nav .button p:nth-child(2){
+    right: 0;
+    background: url("../images/jingling.png")no-repeat 0 -1840px;
+}
+.container .b-nav .button p:nth-child(1):hover{
+    background: url("../images/jingling.png")no-repeat 0 -1798px;
+}
+.container .b-nav .button p:nth-child(2):hover{
+    background: url("../images/jingling.png")no-repeat 0 -1882px;
+}
+.container .b-nav .bnner li .common{
+    text-align: center;
+}
+.b-nav .bnner li .common .top{
+    height: 27px;
+    margin:10px auto;
+}
+.b-nav .bnner li .common .pro-info{
+    color: #333;
+    font-size: 19px;
+    height: 23px;
+    line-height: 23px;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.b-nav .bnner li .common .pro-desc{
+    color: #666;
+    font-size: 14px;
+    height: 18px;
+    line-height: 18px;
+    margin: 10px;
+}
+.b-nav .bnner li .common .pro-price{
+    color:#a92112
+}
+.b-nav .bnner li .common .pro-price .flag{
+    font-size: 12px;
+    margin-left:-5px;
+}
+.b-nav .bnner li .common .pro-price span:nth-child(2){
+    font-size: 22px;
+    margin-left: -5px;
+}
+.b-nav .bnner li .common .con span{
+    padding:0 6px;
+    background-color:rgb(217, 112, 112);
+    border-radius: 2px;
+    font-size:16px;
+    color: #fff;
+    height: 22px;
+    line-height: 22px;
+}
+.b-nav .bnner li .common .top .green{
+    padding: 0 6px;
+    font-size:16px;
+    background-color:rgb(136, 188, 105);
+    padding: 0 6px;
+    font-size:16px;
+    color: #fff;
+}
+.b-nav .bnner li .common .top .yuan{
+    padding: 0 6px;
+    font-size:16px;
+    padding: 0 6px;
+    font-size:16px;
+    background-color:rgb(246, 160, 93);
+}
+.b-nav .bnner .pro-tag-con{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width:16px;
+    padding: 3px;
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid #9f8052;
+    color: #9f8052;
+    border-radius: 4px;
+    background-color: transparent;
+}
+/*居家*/
+#content .identical{
+    position: relative;
+    width: 1080px;
+    height: 418px;
+    margin: 50px auto;
+}
+#content .identical h2{
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 400;
+    color: #333;
+}
+#content .identical .h-more{
+    position: absolute;
+    width:62px;
+    height: 30px;
+    top:5px;
+    right:0;
+    color: #000;
+}
+.identical .h-more .more{
+     font-size: 14px;
+     margin-top: 5px;
+     vertical-align: middle;
+     color: #999;
+ }
+.identical .h-more::before{
+    position: absolute;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    content: "";
+    background: url(../images/jingling.png)no-repeat 0 -1120px;
+}
+.identical .h-more:hover .more{
+    color:#845f3f;
+}
+.identical .h-more:hover::before{
+    background: url("../images/jingling.png")no-repeat 0 -1086px;
+}
+.identical .m-goods{
+    width: 101%;
+    height:89%;
+    margin-top: 10px;
+}
+.identical .m-goods li{
+    position: relative;
+    float: left;
+    width:264px;
+    height:357px;
+    margin-left: 5px;
+    cursor: pointer;
+    border: 1px solid #e7e7e7;
+    transition: all .4s;
+}
+.identical .m-goods li:hover{
+    box-shadow: 0 2px 20px rgba(0,0,0,.1);
+    transform:translate3d(0,-2px,0);
+}
+.identical .m-goods li .pro-img{
+    width: 100%;
+    height: 65%;
+}
+.identical .m-goods li .pro-text{
+    width: 100%;
+    height: 35%;
+    background-color:#f8f8f8;
+}
+.m-goods li .pro-img img{
+    width:125px;
+    height: 125px;
+    margin: 45px 70px 10px;
+}
+.m-goods li .pro-img p{
+    text-align: center;
+    color: #845f3f;
+    font-size: 18px;
+    line-height: 22px;
+    height: 22px;
+    margin-top: 0;
+}
+.m-goods li .pro-text .pro-info{
+    color: #333;
+    padding-top:8px;
+    font-size: 18px;
+    line-height: 22px;
+    height: 22px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.m-goods li .pro-text .pro-price {
+    margin-top: 11px;
+    height: 26px;
+    line-height: 26px;
+    color: #a92112;
+    text-align: center;
+}
+.pro-text .pro-price span:nth-child(2){
+    font-size: 22px;
+}
+.identical .m-goods li .pro-tag-con{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 16px;
+    padding: 3px;
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid #9f8052;
+    color: #9f8052;
+    border-radius: 4px;
+    background-color: transparent;
+}
+.m-goods li .pro-text .con{
+    height: 27px;
+    padding-top: 20px;
+    text-align: center;
+}
+.m-goods li .pro-text .con span{
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 6px;
+    font-size: 16px;
+    border-radius:2px;
+    margin: 0 auto;
+    background-color: rgb(246, 160, 93);
+}
+/*尾部*/
+#foot{
+    width: 100%;
+    height: ;
+    border-top: 1px solid #ccc;
+}
+#foot .f-wrap{
+    width: 1080px;
+    height: 45px;
+    margin: 50px auto;
+}
+#foot .f-wrap .f-logo{
+    float: left;
+    width: 274px;
+    height: 100%;
+}
+#foot .f-wrap .f-logo img{
+    width: 123px;
+    height: 45px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+#foot .f-wrap .f-logo span{
+    vertical-align: middle;
+    color: #666;
+    font-size: 14px;
+}
+#foot .f-wrap .f-info{
+    position: relative;
+    float: left;
+    width: 716px;
+    height: 45px;
+    margin-left:90px;
+    font-size: 12px;
+    color: #666;
+}
+#foot .f-wrap .f-info p:nth-child(1){
+    margin-bottom: 10px;
+}
+#foot .f-wrap .f-info p a{
+    color: #666;
+    margin: 0 5px;
+}
+#foot .f-wrap .f-info p a:hover{
+    color: #845f3f;
+}
+#foot .f-wrap .f-info .pic{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#foot .f-wrap .f-info a img{
+    width: 100px;
+    height: 36px;
+}
+#m-fixedBar{
+    position: fixed;
+    z-index: 999;
+    top:230px;
+    right:10px;
+    width: 80px;
+    height: 360px;
+    background-color:#fff;
+    box-shadow: 0 0 18px rgba(0,0,0,.1);
+}
+#m-fixedBar .fixe-nav{
+    width:70px;
+    height: 100%;
+    margin:0 5px;
+}
+#m-fixedBar .fixe-nav li{
+    position: relative;
+    width: 100%;
+    height:71px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    cursor: pointer;
+}
+#m-fixedBar .fixe-nav li .ico{
+    display: inline-block;
+    width:30px;
+    height: 30px;
+    margin-top: 10px;
+    background: url("../images/jingling.png")no-repeat 0 -1628px;
+}
+#m-fixedBar .fixe-nav li .text{
+    font-size: 12px;
+}
+#m-fixedBar .fixe-nav li:hover .text{
+    color: #f60;
+}
+#m-fixedBar .fixe-nav li:nth-child(1):hover .ico{
+    background: url("../images/jingling.png")no-repeat 0 -1594px;
+}
+#m-fixedBar .fixe-nav li:nth-child(2) .ico{
+    background: url("../images/jingling.png")no-repeat 0 -1250px;
+}
+#m-fixedBar .fixe-nav li:nth-child(2):hover .ico{
+    background: url("../images/jingling.png")no-repeat 0 -1216px;
+}
+#m-fixedBar .fixe-nav li:nth-child(3) .ico{
+    background: url("../images/jingling.png")no-repeat 0 -778px;
+}
+#m-fixedBar .fixe-nav li:nth-child(3):hover .ico{
+    background: url("../images/jingling.png")no-repeat 0 -744px;
+}
+#m-fixedBar .fixe-nav li:nth-child(4) .ico{
+    background: url("../images/jingling.png")no-repeat 0 -982px;
+}
+#m-fixedBar .fixe-nav li:nth-child(4):hover .ico{
+    background: url("../images/jingling.png")no-repeat 0 -1764px;
+}
+#m-fixedBar .fixe-nav li:nth-child(5) .ico{
+    background: url("../images/jingling.png")no-repeat 0 -1288px;
+}
+#m-fixedBar .fixe-nav li:nth-child(5):hover .ico{
+    background: url("../images/jingling.png")no-repeat 0 -1322px;
+}
+#m-fixedBar .fixe-nav li .on{
+     display:none;
+ }
+#m-fixedBar .fixe-nav li .on.show{
+    display:block;
+}
+#m-fixedBar .fixe-nav li .pop-inner{
+    position: absolute;
+    top: 0;
+    left: -245px;
+    width: 230px;
+    background-color:#fff;
+    border: 1px solid #ccc;
+}
+#m-fixedBar .fixe-nav li .befor{
+    position: absolute;
+    top: 30px;
+    z-index: 1;
+    left: -13.5px;
+    width: 6px;
+    height: 12px;
+    background:url("../images/jingling.png")no-repeat 0 -38px;
+}
+#m-fixedBar .fixe-nav li .pop-inner p{
+    width: 200px;
+    margin: 0 auto;
+}
+#m-fixedBar .fixe-nav li .pop-inner .info-title{
+    margin-top: 8px;
+    color: #333;
+    font-size: 12px;
+}
+#m-fixedBar .fixe-nav li .pop-inner .phone {
+    margin-top: 15px;
+    color: #845f3f;
+    font-size: 20px;
+}
+#m-fixedBar .fixe-nav li .pop-inner .day {
+    margin-top: 1px;
+    color: #666;
+    font-size: 12px;
+    margin-bottom:10px;
+}
+#m-fixedBar .fixe-nav li .pop-inner .des {
+    margin-top: 18px;
+    color: #333;
+    font-size: 12px;
+}
+#m-fixedBar .fixe-nav li .pop-down{
+    position: absolute;
+    top: 0;
+    left: -145px;
+    width: 130px;
+    background-color:#fff;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+#m-fixedBar .fixe-nav li .pop-down p{
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 10px;
+}
+#m-fixedBar .fixe-nav li .pop-gift{
+    position: absolute;
+    top: 0;
+    left: -245px;
+    width:230px;
+    height: 328px;
+    background-color:#fff;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+#m-fixedBar .fixe-nav li .pop-gift i{
+    display: block;
+    width: 190px;
+    height: 152px;
+    margin:20px;
+    background: url("../images/gift-gd.3f999fde.png")50% no-repeat;
+    background-size: 100%;
+}
+#m-fixedBar .fixe-nav li .pop-gift p{
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 10px;
+}
+#m-fixedBar .fixe-nav li .pop-wx{
+    position: absolute;
+    top: 0;
+    left: -225px;
+    width: 210px;
+    background-color:#fff;
+    border: 1px solid #ccc;
+}
+#m-fixedBar .fixe-nav li .img{
+    width: 80px;
+    height: 80px;
+    margin: 10px auto;
+}
+#m-fixedBar .fixe-nav li .pop-wx p{
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 10px;
+}
